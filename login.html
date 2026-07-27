@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+
+    <style>
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container label {
+            text-align: left;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .login-container input {
+            width: 95%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
    </head>
  <body>
+
+    <div class="login-container">
     <h1>Login</h1>
-    <form>
+        <form>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+        <input type="text" id="username"  required>
         <br><br>
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password"  required>
         <br><br>
-        <button type="submit">Login</button>
-    </form>
+        <a href="landing.html"><button type="submit">Login</button></a>
+        </form>
+    </div>
+    
  </body>
 </html>
