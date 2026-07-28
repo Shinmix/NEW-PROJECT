@@ -31,14 +31,15 @@
             border: 1px solid #ccc;
             
         }
-        .login-container button {
-            width: 100%;
-            padding: 10px;
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #fff;
             background-color: #007BFF;
-            color: white;
-            border: none;
+            padding: 10px;
             border-radius: 5px;
-            cursor: pointer;
         }
     </style>
    </head>
@@ -48,12 +49,14 @@
     <h1>Login</h1>
         <form>
         <label for="username">Username:</label>
-        <input type="text" id="username"  required>
-        <br><br>
+        <input type="text" id="username"  >
+        
         <label for="password">Password:</label>
-        <input type="password" id="password"  required>
-        <br><br>
-        <a href="landing.html"><button type="submit">Login</button></a>
+        <input type="password" id="password">
+
+        <a href="landing.html">login</a>
+            
+       
         </form>
     </div>
     
