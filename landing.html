@@ -4,73 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Boring Website</title>
-
-        <style>
-            header {
-                background-color: #f2f2f2;
-                padding: 50px;
-                text-align: center;
-            }
-            header a {
-                text-align: center;
-                margin-top: 10px;
-                text-decoration: none;
-                color: #fff;
-                background-color: #007BFF;
-                padding: 10px 30px;
-                border-radius: 5px;
-                position: fixed;
-                top: 20px;
-                right: 20px;
-            }
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            nav {
-                background-color: #333;
-                color: #fff;
-                padding: 30px;
-            }
-            nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            nav ul li {
-                margin: 0 10px;
-            }
-            nav ul li a {
-            display: block;
-            text-align: center;
-            
-            margin: 10px 20px 10px 20px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #007BFF;
-            padding: 10px  30px;
-            border-radius: 5px;
-                
-            }       
-            </style>
+    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>    
-            <h1> Boring Website</h1>
-            <a href="login.html">Login</a>
-        </header>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a class="brand" href="landing.html">Boring Website</a>
         <nav>
             <ul>
-                <li><a href="landing.html">Home</a></li>
-                <li><a href="###">Profile</a></li>
-                <li><a href="###">Lobby</a></li>
+                     <li><a href="landing.html">Home</a></li>
+                    <li><a class="active" href="login.html">Login</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="lobby.html">Lobby</a></li>
             </ul>
         </nav>
-        <h1>Welcome to the Boring Website</h1>
-        <p>This is a simple boring website.</p>
+            <a class="button button-primary" href="login.html">Sign in</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Welcome to the renewed website experience.</h1>
+            <p>Navigate the site with a crisp, modern design built for clarity. Fast access, smooth interactions, and a polished page layout make your pages feel professional.</p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <h2>Simple Navigation</h2>
+                    <p>The header keeps your important links easy to reach so visitors can move between home, login, and lobby pages effortlessly.</p>
+                </article>
+                <article class="card">
+                    <h2>Clean Interface</h2>
+                    <p>A refined color palette and generous spacing help your content stand out without overwhelming the user.</p>
+                </article>
+                <article class="card">
+                    <h2>Fully Responsive</h2>
+                    <p>The layout adapts across screen sizes, keeping buttons accessible and text readable on mobile and desktop.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 Boring Website — polished with a modern landing experience.
+    </footer>
     </body>
 </html>

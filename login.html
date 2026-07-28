@@ -1,64 +1,52 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-   <head>
-
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login — Boring Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container site-nav">
+            <a class="brand" href="landing.html">Boring Website</a>
+            <nav>
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a class="active" href="login.html">Login</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="lobby.html">Lobby</a></li>
+                </ul>
+            </nav>
+            <a class="button button-secondary" href="landing.html">Back home</a>
+        </div>
+    </header>
 
-    <style>
-        .login-container {
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .login-container h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .login-container label {
-            text-align: left;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .login-container input {
-            width: 95%;
-            padding: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            
-        }
-        .login-container a {
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-            text-decoration: none;
-            color: #fff;
-            background-color: #007BFF;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
-   </head>
- <body>
+    <main class="container">
+        <section class="section">
+            <div class="form-card">
+                <h1>Login</h1>
+                <p>Enter your credentials to access the site.</p>
+                <form>
+                    <div class="field">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="jane.doe">
+                    </div>
+                    <div class="field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••">
+                    </div>
+                    <div class="login-actions">
+                        <button class="button button-primary" type="button" onclick="window.location='landing.html'">Sign in</button>
+                        <a class="button button-secondary" href="lobby.html">Continue as guest</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-    <div class="login-container">
-    <h1>Login</h1>
-        <form>
-        <label for="username">Username:</label>
-        <input type="text" id="username"  >
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password">
-
-        <a href="landing.html">login</a>
-            
-       
-        </form>
-    </div>
-    
- </body>
+    <footer class="footer">
+        Secure access, simple experience.
+    </footer>
+</body>
 </html>
