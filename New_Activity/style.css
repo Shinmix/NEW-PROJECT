@@ -1,3 +1,40 @@
-.header h1 {
-    text-align: center;
+.container {
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 50px;
 }
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10px 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    text-align: left;
+    font-size: 50px;
+    padding: 10px 20px;
+}
+
+.header a {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+.content {
+   border: 1px solid gray;
+   border-radius: 10px;
+   padding: 30px;
+}
+
+
+
